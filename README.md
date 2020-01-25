@@ -1,1 +1,1 @@
-# mean-service-portal
+# MEAN Home Automation Devices Service portal

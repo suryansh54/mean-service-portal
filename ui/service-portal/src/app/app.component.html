@@ -1,1 +1,8 @@
 <h1>{{ name }}</h1>
+<ul>
+  <li *ngFor="let item of grocery">
+    <span *ngIf="item == 4 || item == 2">
+      {{item}}
+    </span>
+  </li>
+</ul>

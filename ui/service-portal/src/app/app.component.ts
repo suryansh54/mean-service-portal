@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name: string = "XYZ";
   age: number = 25;
+  grocery: Array<number> = [1,2,3,4,5,89,0]
 }

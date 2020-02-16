@@ -1,8 +1,25 @@
-<h1>{{ name }}</h1>
-<ul>
-  <li *ngFor="let item of grocery">
-    <span *ngIf="item == 4 || item == 2">
-      {{item}}
-    </span>
-  </li>
+<a routerLink="/dashboard">Dashboard</a>
+<!-- <ul>
+    <li *ngFor="let employee of employeeData">
+        <span *ngIf="employee.employee_salary > 137500">
+            {{employee.employee_salary | currency }}
+
+            {{0.259 | percent}}
+        </span>
+    </li>
 </ul>
+<p [style.display]="'none'">
+    Expression sets display to "none".
+    This paragraph is hidden but still in the DOM.
+  </p>           -->
+<br>
+<label>Name</label>
+
+<form [formGroup]="profile">
+    <input type="text" formControlName="name">
+    <input type="email" formControlName="email">
+    <button (click)="profileFormSubmit()">Save</button>
+</form>
+
+
+<router-outlet></router-outlet>
